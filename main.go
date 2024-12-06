@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"os"
 	"strconv"
 )
@@ -18,12 +17,10 @@ func main() {
 	var num1, num2 string
 
 	fmt.Println("enter the first number")
-	_, err := fmt.Scanln(&num1)
+	fmt.Scanln(&num1)
 
-	if err != nil {
-
-		log.Fatal(err)
-	}
+	fmt.Println("enter the second number")
+	fmt.Scanln(&num2)
 
 	switch operation {
 	case "+":
